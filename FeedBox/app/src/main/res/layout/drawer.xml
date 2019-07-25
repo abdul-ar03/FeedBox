@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:clickable="true"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#6EC05D"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/drawer_title_bar">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/icon2"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="FeedBox"
+            android:id="@+id/textView4"
+            android:layout_gravity="center_vertical"
+            android:textSize="26dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="AR Developments"
+            android:id="@+id/textView5"
+            android:layout_gravity="center_vertical"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="30dp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="10dp"
+        android:onClick="open_qr_scanner">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:src="@drawable/qr_icon"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Scan QR Code"
+            android:id="@+id/textView2"
+            android:gravity="center_vertical"
+            android:textColor="#111111"
+            android:typeface="sans"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="offline">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView11"
+            android:src="@drawable/offfline"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Offline entries"
+            android:id="@+id/textView6"
+            android:gravity="center_vertical"
+            android:textColor="#111111"
+            android:typeface="sans"
+            android:textSize="16dp"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/offline_counts"
+            android:gravity="center_vertical"
+            android:textColor="#ff5757"
+            android:typeface="sans"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="logout">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView3"
+            android:src="@drawable/logout"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Logout"
+            android:id="@+id/textView3"
+            android:gravity="center_vertical"
+            android:textColor="#111111"
+            android:typeface="sans"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="exit">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView12"
+            android:src="@drawable/exit"
+            android:padding="7.5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Exit"
+            android:id="@+id/textView7"
+            android:gravity="center_vertical"
+            android:textColor="#111111"
+            android:typeface="sans"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

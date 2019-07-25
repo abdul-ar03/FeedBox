@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:gravity="center_vertical|bottom">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imageView6"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="-30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FeedBox"
+                android:id="@+id/textView8"
+                android:layout_gravity="center_vertical"
+                android:textColor="#009900"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AR Developments"
+            android:id="@+id/textView9"
+            android:typeface="sans"
+            android:textSize="16dp"
+            android:textColor="@color/t_green"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.44" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Scan"
+            android:id="@+id/button"
+            android:clickable="true"
+            android:focusable="false"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:onClick="open_qr_scanner"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_border"
+            android:typeface="sans"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

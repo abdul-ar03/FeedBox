@@ -1,0 +1,83 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#6EC05D"
+            android:id="@+id/action_bar"
+            android:gravity="left|center_vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ham_img"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:src="@drawable/ham_icon"
+                android:padding="5dp"
+                android:layout_marginLeft="2dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:scrollIndicators="none"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/body_frame">
+
+                <!--<include android:layout_height="180dp" layout="@layout/field2_lay"-->
+                    <!--android:layout_width="match_parent"></include>-->
+
+                <!--<include-->
+                    <!--layout="@layout/field3_lay"-->
+                    <!--android:layout_height="115dp"-->
+                    <!--android:layout_width="match_parent" />-->
+
+                <!--<include android:layout_height="115dp" layout="@layout/field4_lay"-->
+                    <!--android:layout_width="match_parent"></include>-->
+
+                <!--<include-->
+                    <!--layout="@layout/field5_lay"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_width="match_parent" />-->
+
+                <!--<include-->
+                    <!--layout="@layout/field6_lay"-->
+                    <!--android:layout_height="115dp"-->
+                    <!--android:layout_width="match_parent" />-->
+
+                <!--<include-->
+                    <!--layout="@layout/field8_lay"-->
+                    <!--android:layout_height="250dp"-->
+                    <!--android:layout_width="match_parent" />-->
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/drawer_div1"
+        android:layout_gravity="start"
+        android:orientation="vertical">
+        <include layout="@layout/drawer"></include>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

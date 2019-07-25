@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FeedBox</string>
+    <string name="ip_address">192.168.43.102</string>
+</resources>

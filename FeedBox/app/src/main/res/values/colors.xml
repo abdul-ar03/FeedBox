@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="t_blue">#30B7E6</color>
+    <color name="t_red">#FF4242</color>
+    <color name="t_green">#6EC05D</color>
+    <color name="t_pink">#D54487</color>
+    <color name="t_yellow">#FFBD30</color>
+    <color name="t_purple">#AB66CD</color>
+    <color name="t_white">#ffffff</color>
+    <color name="t_transp">#00FFFFFF</color>
+    <color name="black">#646466</color>
+</resources>
